@@ -1,5 +1,32 @@
 :: StoryTitle
-Tweego Basic Setup
+Choosing Your Own CYOA
 
-:: Start
-@@#hello;Hello World!@@
+:: Start [Start]
+!!! Choose Your Own CYOA
+!!!! A demonstrative adventure
+
+You sit at your computer and contemplate how you're going to
+write your next HTML adventure game. You wrote your last one
+[[using Twine->Twine]], but you've heard good things about
+[[Twee3]], as well.
+
+:: Twine
+You decide to stick with what you know and use Twine. That's
+fine: it's a great system and it's easy to use, especially
+for beginners. Maybe next time you'll be ready to try Twee3!
+
+''THE END''
+
+[[Play again?->Start]]
+
+:: Twee3
+You decide to write your latest adventure using Twee3. You
+find that you're able to use all of the things you're
+familiar with from Twine, but you also get to use your
+favourite text editor, break up your work into multiple
+files, mark up content using modern languages, and preview
+in a separate browser while you work.
+
+''THE END''
+
+[[Play again?->Start]]
