@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"twee3LanguageTools.passage.list": true,
+		"twee3LanguageTools.storyformat.current": "sugarcube-2",
+		"liveServer.settings.port": 5501,
+		"twee3LanguageTools.passage.group": "Tag"
+	}
+}
