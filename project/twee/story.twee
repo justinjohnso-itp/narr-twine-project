@@ -16,14 +16,14 @@ The Oldest House
 <span>wild</span> <span>gardens</span>
 </div>
 
-<div class="floating-text" style="right: 40px; top: 100px">
-wasn't it smaller from outside? the windows seemed fewer, the veranda less grand...
-</div>
-
 <div class="narrative">
 Tobago House stands before you, a masterpiece of coral stone and Caribbean dignity. The wraparound veranda with its ornate woodwork catches the sunset, making the house glow like amber through the branches of ancient immortelle trees. The letter from your great-aunt, found among her effects after her disappearance, mentioned only that you would find [[the main door->Foyer]] unlocked, waiting for you. 
 
 You pause at a fork in the road. To your right, worn stepping stones lead around to [[the kitchen entrance->Kitchen]], half-hidden behind overgrown vines. The [[coral stone path->Gardens]] continues ahead, circling the house's perimeter through gardens where hummingbirds hover in impossible patterns.
+</div>
+
+<div class="floating-text" style="right: 40px; top: 100px">
+wasn't it smaller from outside? the windows seemed fewer, the veranda less grand...
 </div>
 
 :: Foyer [hub] {"position":"1000,400"}
@@ -73,22 +73,17 @@ the books remember your fingers from tomorrow's reading...
 The book opens of its own accord. The pages are filled with
 
 <div class="fragmented-text">
-<span>secrets</span> 
+<span>[[secrets->Escape]]</span> 
 <span>that</span> 
 <span>should</span> 
 <span>remain</span>
-<span>buried</span>
+<span>[[buried->Lost Forever]]</span>
 </div>
-
-[[read further->Lost Forever]]
-[[close it quickly->Escape]]
 
 :: Lost Forever [ending] {"position":"900,1000"}
 <div class="fragmented-text">
 <span>forever</span> <span>part</span> <span>of</span> 
-<span>the</span> <span>house</span>
-<span>always</span> <span>have</span> <span>been</span> 
-<span>always</span> <span>will</span> <span>be</span>
+<span>the</span> <span>house</span> <span>now</span>
 </div>
 
 <div class="narrative">
@@ -172,9 +167,9 @@ her handwriting changes with each timeline... but the ink is always fresh
 
 :: Letters [item] {"position":"1600,750"}
 <div class="fragmented-text">
-<span>ink</span> <span>flows</span>
-<span>like</span> <span>time</span>
-<span>never</span> <span>dries</span>
+<span>words</span> <span>written</span>
+<span>in</span> <span>time</span>
+<span>never</span> <span>fade</span>
 </div>
 
 <div class="narrative">
@@ -201,10 +196,9 @@ the dancers have been waiting for you since before you were born...
 
 :: Endless Dance [ending] {"position":"1100,1000"}
 <div class="fragmented-text">
-<span>spinning</span> <span>through</span>
-<span>all</span> <span>possible</span>
-<span>times</span> <span>at</span>
-<span>once</span>
+<span>an</span> <span>eternity</span>
+<span>to</span> <span>dance</span>
+<span>with</span> <span>us</span>
 </div>
 
 <div class="narrative">
@@ -213,7 +207,7 @@ The dust swirls around you, taking the almost-familiar shapes of people you've c
 The doorway to the outside world grows dimmer with each spin, until it fades entirely...
 </div>
 
-''A JOYOUS CURSE, TO DANCE THROUGH TIME''
+''A JOYOUS CURSE, TO SPIN THROUGH TIME''
 [[Begin Again?->Start]]
 
 :: Lower Halls [transition] {"position":"1000,600"}
