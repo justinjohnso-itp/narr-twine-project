@@ -2,10 +2,7 @@
 [start] - start
 [hub] - connecting node
 [location] - standard node
-[branch] - additional world-building node
 [item] - cool object
-[artifact] - really cool object
-[vision] - weird shit
 [transition] - connecting node
 [ending] - the. end. (one of them anyw)
 %%/
