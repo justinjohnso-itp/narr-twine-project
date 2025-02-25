@@ -46,6 +46,10 @@ the house remembers when you'll arrive... it's been waiting so long...
 </div>
 
 :: Library [location] {"position":"800,600"}
+<div class="narrative">
+In the depths of the east wing, you find a space that defies comprehension. Endless shelves of leather-bound books extend far beyond what the exterior walls should allow, their spines bearing titles in languages that shift between English, French Creole, and unfamiliar scripts that hurt your eyes to read. The air is thick with the musty scent of old paper and forgotten obeah wisdom.
+</div>
+
 <div class="fragmented-text">
 <span>knowledge</span>
 <span>spreads</span>
@@ -56,8 +60,6 @@ the house remembers when you'll arrive... it's been waiting so long...
 </div>
 
 <div class="narrative">
-In the depths of the east wing, you find a space that defies comprehension. Endless shelves of leather-bound books extend far beyond what the exterior walls should allow, their spines bearing titles in languages that shift between English, French Creole, and unfamiliar scripts that hurt your eyes to read. The air is thick with the musty scent of old paper and forgotten obeah wisdom.
-
 A peculiar [[violet glow->Tome]] emanates from somewhere deep within the stacks, pulsing like a heartbeat. The [[carved doors->Foyer]] behind you seem to have shrunk, as if the library itself is reluctant to let you leave.
 
 Through gaps in the bookcases, you glimpse reflections of the same room, each slightly different, each promising a different kind of knowledge.
@@ -215,6 +217,10 @@ The doorway to the outside world grows dimmer with each spin, until it fades ent
 [[Begin Again?->Start]]
 
 :: Lower Halls [transition] {"position":"1000,600"}
+<div class="narrative">
+The stairs spiral down, and down, far past where the foundations of the house should be. Gas lamps flicker with green flame, revealing [[wine cellars->Wine Cellar]] that extend for miles.
+</div>
+
 <div class="fragmented-text">
 <span>descending</span> 
 <span>deeper</span> 
@@ -226,7 +232,7 @@ The doorway to the outside world grows dimmer with each spin, until it fades ent
 </div>
 
 <div class="narrative">
-The stairs spiral down, and down, far past where the foundations of the house should be. Gas lamps flicker with green flame, revealing [[wine cellars->Wine Cellar]] that extend for miles. A [[narrow passage->Servants Quarters]] seems to connect to the servant's quarters, though you're certain they were on the ground floor.
+A [[narrow passage->Servants Quarters]] seems to connect to the servant's quarters, though you're certain they were on the ground floor.
 
 From somewhere far below, you hear what might be [[music->Lost Forever]], or perhaps the house's heartbeat.
 </div>
