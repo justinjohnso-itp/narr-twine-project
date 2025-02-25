@@ -1,32 +1,214 @@
 :: StoryTitle
-Choosing Your Own CYOA
+The House That Wasn't
 
 :: Start [Start]
-!!! Choose Your Own CYOA
-!!!! A demonstrative adventure
+<div class="fragmented-text">
+<span>The</span> <span>gravel</span> <span>path</span> 
+<span>winds</span> <span>through</span> 
+<span>immaculate</span> <span>gardens</span>
+</div>
 
-You sit at your computer and contemplate how you're going to
-write your next HTML adventure game. You wrote your last one
-[[using Twine->Twine]], but you've heard good things about
-[[Twee3]], as well.
+<div class="floating-text" style="right: 40px; top: 100px">
+wasn't it smaller from outside? the windows seemed fewer, the facade less grand...
+</div>
 
-:: Twine
-You decide to stick with what you know and use Twine. That's
-fine: it's a great system and it's easy to use, especially
-for beginners. Maybe next time you'll be ready to try Twee3!
+<div class="narrative">
+Thornfield Manor stands before you, a Georgian masterpiece of limestone and dignity. Three stories of symmetrical windows reflect the setting sun, making the house glow like amber. The letter from your great-aunt, found among her effects after her disappearance, mentioned only that you would find [[the main door->Foyer]] unlocked, waiting for you. 
+
+You pause at the junction of paths. To your right, worn flagstones lead around to [[the servant's entrance->Kitchen]], half-hidden behind a century-old wisteria. The [[gravel drive->Gardens]] continues ahead, circling the house's perimeter through immaculate topiary gardens that seem too vast for the property's boundaries.
+</div>
+
+:: Foyer
+<div class="narrative">
+The foyer opens into a space that shouldn't exist. Marble columns stretch upward into shadows that swallow the ceiling. A grand staircase spirals both up and down, though you distinctly remember seeing only three floors from outside.
+</div>
+
+<div class="fragmented-text">
+<span>which</span> 
+<span>way</span> 
+<span>is</span> 
+<span>up</span>
+</div>
+
+<div class="link-cluster">
+[[ascend the stairs->Upper Landing]]
+[[descend into darkness->Lower Halls]]
+[[enter the east wing->Library]]
+</div>
+
+:: Library
+<div class="narrative">
+Rows of books extend far beyond what the exterior walls should allow. Most volumes are bound in leather, their spines bearing titles in languages you've never seen. One book pulses with a faint violet light.
+</div>
+
+<div class="fragmented-text">
+<span>it</span> 
+<span>knows</span> 
+<span>you're</span> 
+<span>here</span>
+</div>
+
+[[reach for the glowing book->Tome]]
+[[search for a map->Maps]]
+[[return to the foyer->Foyer]]
+
+:: Tome
+The book opens of its own accord. The pages are filled with
+
+<div class="fragmented-text">
+<span>secrets</span> 
+<span>that</span> 
+<span>should</span> 
+<span>remain</span> 
+<span>buried</span>
+</div>
+
+[[read further->Lost Forever]]
+[[close it quickly->Escape]]
+
+:: Lost Forever
+<div class="narrative">
+The words crawl into your mind like insects. You understand now - the house, the endless corridors, the impossible geometry. You understand too much. Your feet carry you deeper into the house, and you know you'll never stop walking.
+</div>
 
 ''THE END''
 
-[[Play again?->Start]]
+[[Start over?->Start]]
 
-:: Twee3
-You decide to write your latest adventure using Twee3. You
-find that you're able to use all of the things you're
-familiar with from Twine, but you also get to use your
-favourite text editor, break up your work into multiple
-files, mark up content using modern languages, and preview
-in a separate browser while you work.
+:: Escape
+<div class="narrative">
+You slam the book shut. The violet light dims, and suddenly you remember the path back. Down the main stairs, through the foyer, past the columns that try to turn you around. You burst through the front door into blessed daylight.
+</div>
 
 ''THE END''
 
-[[Play again?->Start]]
+[[Start over?->Start]]
+
+:: Upper Landing
+<div class="fragmented-text">
+<span>these</span> <span>halls</span> <span>never</span> 
+<span>ended</span> <span>in</span> <span>her</span> 
+<span>time</span> <span>either</span>
+</div>
+
+<div class="narrative">
+The gallery stretches before you, a testament to generations of history trapped in gilt frames. Ancient portraits line the walls, their eyes following your movement with unsettling attention. Through gaps in the heavy velvet curtains, you glimpse a [[grand ballroom->Ballroom]] beyond, moonlight streaming through its windows despite the sunset moments ago.
+
+The air grows heavier as you proceed, thick with the musty sweetness of old books. A [[mahogany door->Study]] stands ajar, revealing glimpses of floor-to-ceiling shelves and a massive desk buried under papers. Behind you, the [[main staircase->Foyer]] seems to have moved further away, though you haven't walked that far.
+
+Somewhere distant, music plays. Or perhaps it's just the wind.
+</div>
+
+[[try the ballroom->Ballroom]]
+[[enter the study->Study]]
+[[return downstairs->Foyer]]
+
+:: Gardens
+<div class="narrative">
+The manicured hedges form a perfect circle around the house. No matter how long you walk, you end up where you started. The sun hasn't moved in the sky.
+</div>
+
+[[give up and enter->Foyer]]
+[[keep walking->Lost Forever]]
+
+:: Kitchen
+<div class="narrative">
+The servant's entrance leads to a vast kitchen trapped in perpetual twilight. Copper pots hang motionless, their surfaces reflecting a sunset that shouldn't be visible from this side of the house. The air smells of bread that's been baking for centuries.
+</div>
+
+<div class="fragmented-text">
+<span>time</span> 
+<span>moves</span> 
+<span>differently</span> 
+<span>here</span>
+</div>
+
+<div class="link-cluster">
+[[investigate the pantry->Pantry]]
+[[follow the servant's corridor->Servants Quarters]]
+[[return to the foyer->Foyer]]
+</div>
+
+:: Pantry
+<div class="narrative">
+Shelves stretch upward into darkness, stocked with preserves from years that haven't happened yet. Jars of impossible fruits glow faintly, their contents shifting when you look away.
+</div>
+
+[[taste the preserves->Lost Forever]]
+[[return to the kitchen->Kitchen]]
+
+:: Servants Quarters
+<div class="narrative">
+The narrow corridor branches and turns back on itself impossibly. Behind each door, you glimpse the same room from different angles, as if the space is folded like origami. Uniforms hang in perfect rows, waiting for staff who vanished long ago.
+</div>
+
+<div class="floating-text" style="right: 60px; top: 120px">
+they're still here
+</div>
+
+[[explore the quarters->Endless Quarters]]
+[[try to find your way back->Kitchen]]
+
+:: Endless Quarters
+<div class="narrative">
+Each room connects to another identical room. The windows all show the same view, regardless of direction. You realize you've been walking for hours, or perhaps days.
+</div>
+
+[[accept your fate->Lost Forever]]
+[[close your eyes and run->Kitchen]]
+
+:: Study
+<div class="narrative">
+Dark wooden panels line the walls, books crowd every surface, and a massive desk dominates the room. Letters scattered across its surface date from 1842 to 2157, all in your great-aunt's handwriting.
+</div>
+
+<div class="fragmented-text">
+<span>she</span> 
+<span>never</span> 
+<span>left</span>
+</div>
+
+[[read the letters->Letters]]
+[[examine the desk->Desk]]
+[[leave quickly->Upper Landing]]
+
+:: Letters
+<div class="narrative">
+The letters speak of discoveries, of doors that shouldn't exist, of time flowing like water through the house's halls. Your great-aunt's final letter is addressed to you, dated next week.
+</div>
+
+[[read your letter->Revelation]]
+[[put it away->Study]]
+
+:: Desk
+<div class="narrative">
+The desk drawers contain maps of impossible architectures. Each one shows the house from a different dimension, overlapping like pages in a book. One drawer holds a brass key that feels warm to the touch.
+</div>
+
+[[take the key->Escape]]
+[[close the drawer->Study]]
+
+:: Ballroom
+<div class="floating-text" style="left: 30px; top: 150px">
+the dancers never left, did they? they're still here, still turning, still waiting...
+</div>
+
+<div class="narrative">
+Moonlight streams through tall windows that stretch two stories high, though sunset painted the sky amber mere moments ago. The parquet floor beneath your feet shifts subtly, its intricate patterns rearranging themselves when you look away. Dust motes dance in formation, keeping time to music that exists somewhere between memory and reality.
+
+The space feels alive with anticipation, as if [[the empty dance floor->Endless Dance]] awaits your step to spring into motion. A curved [[marble staircase->Balcony]] sweeps up to a musician's gallery, where phantom instruments rest on abandoned stands. The [[grand doorway->Upper Landing]] through which you entered seems smaller now, darker, as if the room is reluctant to let you leave.
+
+In the mirrors that line the walls, your reflection isn't quite in sync with your movements.
+</div>
+
+[[join the dance->Endless Dance]]
+[[watch from the balcony->Balcony]]
+[[return to the gallery->Upper Landing]]
+
+:: Endless Dance
+<div class="narrative">
+The dust motes swirl around you, taking human form. You dance with partners from every era, each step carrying you further from the world you knew. The music grows stronger, and you realize too late that you can't stop.
+</div>
+
+[[fade into the dance->Lost Forever]]
+[[break free->Ballroom]]

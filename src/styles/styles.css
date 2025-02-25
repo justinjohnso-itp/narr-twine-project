@@ -1,0 +1,134 @@
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@300;400&display=swap');
+
+body {
+    background-color: #f4ecd8;
+    color: #1a1a1a;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+}
+
+#story {
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 2em;
+}
+
+.passage {
+    position: relative;
+    transition: opacity 0.4s ease;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Space Mono', monospace;
+    color: #2d0066;
+}
+
+/* Text effects */
+.fragmented-text {
+    position: relative;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    margin: 2em 0;
+}
+
+.fragmented-text span {
+    font-family: 'Space Mono', monospace;
+    color: #2d0066;
+    opacity: 0.7;
+    place-self: center;
+    transform: translate(
+        calc(-50px + (var(--random-x, 0) * 100px)),
+        calc(-50px + (var(--random-y, 0) * 100px))
+    );
+}
+
+.mirror-text {
+    display: inline-block;
+    transform: scaleX(-1);
+    color: #660033;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Floating elements */
+.floating-text {
+    position: absolute;
+    color: rgba(45, 0, 102, 0.3);
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+    pointer-events: none;
+    font-size: 0.9em;
+}
+
+/* Narrative blocks */
+.narrative {
+    max-width: 600px;
+    margin: 4em auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.narrative a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted #2d0066;
+}
+
+.narrative a:hover {
+    color: #2d0066;
+    border-bottom: 1px solid #2d0066;
+}
+
+/* Links */
+.link-cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 3em 0;
+    justify-content: space-around;
+}
+
+.link-cluster a {
+    transform: rotate(var(--rotation));
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.link-cluster a:hover {
+    opacity: 1;
+    transform: scale(1.1) rotate(var(--rotation));
+}
+
+.link-cluster .link-internal {
+    color: #2d0066;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Space Mono', monospace;
+    transform: rotate(30deg);
+    display: inline-block;
+}
+
+.link-cluster .link-internal:hover {
+    color: #660033;
+    transform: rotate(35deg) scale(1.1);
+}
+
+/* Fragment animation */
+.fragment {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: var(--delay, 0s);
+    transform: rotate(30deg);
+    margin: 2em;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px) rotate(30deg); }
+    to { opacity: 1; transform: translateY(0) rotate(30deg); }
+}

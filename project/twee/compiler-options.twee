@@ -2,5 +2,7 @@
 {
     "ifid": "F3051898-8973-411A-95E3-4C3315B102DF",
     "format": "SugarCube",
-    "format-version": "2.30.0"
+    "format-version": "2.30.0",
+    "style-sheet": ["styles.css"],
+    "script": ["script.js"]
 }
