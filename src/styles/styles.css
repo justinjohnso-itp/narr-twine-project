@@ -26,18 +26,21 @@ body {
     scrollbar-width: thin;
 }
 
+#story-title {
+    color: #eee
+}
+
 .passage {
     display: grid;
     grid-template-areas:
         "fragment"
         "narrative"
         "floating";
-    grid-template-rows: minmax(200px, auto) auto minmax(100px, auto);
-    gap: 2rem;
-    min-height: 100vh;
+    grid-template-rows: minmax(100px, auto) auto minmax(50px, auto);
+    gap: 1rem;
     max-width: 800px;
     margin: 0 auto;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 /* Typography */
@@ -63,13 +66,6 @@ h1, h2, h3 {
     font-size: clamp(0.8rem, 1.5vw, 1.1rem);
 }
 
-.mirror-text {
-    display: inline-block;
-    transform: scaleX(-1);
-    color: #8b4513;
-    font-family: 'Space Mono', monospace;
-}
-
 /* Floating elements */
 .floating-text {
     grid-area: floating;
@@ -92,59 +88,25 @@ h1, h2, h3 {
 .narrative a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px dotted #2d0066;
+    border-bottom: 1px dotted #4a1c40;
 }
 
 .narrative a:hover {
-    color: #2d0066;
-    border-bottom: 1px solid #2d0066;
+    color: #4a1c40;
+    border-bottom: 1px solid #4a1c40;
 }
 
-/* Links */
-.link-cluster {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    margin: 3em 0;
-    justify-content: space-around;
-}
-
-.link-cluster a {
-    transform: rotate(var(--rotation));
-    opacity: 0.8;
-    transition: all 0.3s ease;
-}
-
-.link-cluster a:hover {
-    opacity: 1;
-    transform: scale(1.1) rotate(var(--rotation));
-}
-
-.link-cluster .link-internal {
-    color: #2d0066;
-    text-decoration: none;
-    transition: all 0.3s ease;
+/* Add ending-specific styles */
+.passage strong {
+    display: block;
+    text-align: center;
     font-family: 'Space Mono', monospace;
-    transform: rotate(30deg);
-    display: inline-block;
+    color: #4a1c40;
+    margin: 1rem 0;
 }
 
-.link-cluster .link-internal:hover {
-    color: #660033;
-    transform: rotate(35deg) scale(1.1);
-}
-
-/* Fragment animation */
-.fragment {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-    animation-delay: var(--delay, 0s);
-    transform: rotate(30deg);
-    margin: 2em;
-    display: inline-block;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px) rotate(30deg); }
-    to { opacity: 1; transform: translateY(0) rotate(30deg); }
+/* Adjust floating text in endings */
+.passage:last-child .floating-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
