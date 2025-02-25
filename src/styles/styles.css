@@ -36,11 +36,11 @@ body {
         "fragment"
         "narrative"
         "floating";
-    grid-template-rows: minmax(100px, auto) auto minmax(50px, auto);
-    gap: 1rem;
+    grid-template-rows: minmax(200px, auto) auto minmax(100px, auto);
+    gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 2em;
 }
 
 /* Typography */
@@ -85,35 +85,13 @@ h1, h2, h3 {
     text-align: justify;
 }
 
-/* Update link styles to be more general */
-.passage a {
-    color: #4169e1;
+.narrative a {
+    color: inherit;
     text-decoration: none;
     border-bottom: 1px dotted #4a1c40;
-    transition: all 0.2s ease;
 }
 
-.passage a:hover {
+.narrative a:hover {
     color: #4a1c40;
     border-bottom: 1px solid #4a1c40;
-}
-
-/* Remove the narrative-specific link styles since they're now handled globally */
-.narrative a {
-    color: #4169e1;
-}
-
-/* Add ending-specific styles */
-.passage strong {
-    display: block;
-    text-align: center;
-    font-family: 'Space Mono', monospace;
-    color: #4a1c40;
-    margin: 1rem 0;
-}
-
-/* Adjust floating text in endings */
-.passage:last-child .floating-text {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }

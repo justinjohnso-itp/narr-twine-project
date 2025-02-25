@@ -10,9 +10,9 @@
 [ending] - the. end. (one of them anyw)
 %%/
 
-:: StoryTitle
+:: StoryTitle {"position":"500,100"}
 The Oldest House
-:: Start [start]
+:: Start [start] {"position":"1000,200"}
 <div class="fragmented-text">
 <span>The</span> <span>coral</span> <span>path</span> 
 <span>winds</span> <span>through</span> 
@@ -29,7 +29,7 @@ Tobago House stands before you, a masterpiece of coral stone and Caribbean digni
 You pause at a fork in the road. To your right, worn stepping stones lead around to [[the kitchen entrance->Kitchen]], half-hidden behind overgrown vines. The [[coral stone path->Gardens]] continues ahead, circling the house's perimeter through gardens where hummingbirds hover in impossible patterns.
 </div>
 
-:: Foyer [hub]
+:: Foyer [hub] {"position":"1000,400"}
 <div class="fragmented-text">
 <span>which</span> 
 <span>way</span> 
@@ -48,7 +48,7 @@ The air is thick with the sweet scent of night-blooming jasmine, though you can'
 the house remembers when you'll arrive... it's been waiting so long...
 </div>
 
-:: Library [location]
+:: Library [location] {"position":"800,600"}
 <div class="fragmented-text">
 <span>knowledge</span>
 <span>spreads</span>
@@ -70,7 +70,7 @@ Through gaps in the bookcases, you glimpse reflections of the same room, each sl
 the books remember your fingers from tomorrow's reading...
 </div>
 
-:: Tome [item]
+:: Tome [item] {"position":"600,600"}
 The book opens of its own accord. The pages are filled with
 
 <div class="fragmented-text">
@@ -84,7 +84,7 @@ The book opens of its own accord. The pages are filled with
 [[read further->Lost Forever]]
 [[close it quickly->Escape]]
 
-:: Lost Forever [ending]
+:: Lost Forever [ending] {"position":"900,1000"}
 <div class="fragmented-text">
 <span>forever</span> <span>part</span> <span>of</span> 
 <span>the</span> <span>house</span>
@@ -106,7 +106,7 @@ welcome home. it's been so very long...
 
 [[Begin Again?->Start]]
 
-:: Escape [ending]
+:: Escape [ending] {"position":"1300,1000"}
 <div class="narrative">
 You slam the book shut, its whispers still echoing in your mind. But something inside you remembers the way out - down the grand [[staircase->Foyer]], through the twisting foyer, past the columns that try to turn you around. You burst through the [[front door->Start]] into blessed daylight, the house's shadows retreating from your mind.
 </div>
@@ -119,7 +119,7 @@ until you return again... in another time...
 
 [[Start over?->Start]]
 
-:: Upper Landing [hub]
+:: Upper Landing [hub] {"position":"1200,600"}
 <div class="fragmented-text">
 <span>these</span> <span>halls</span> <span>never</span> 
 <span>ended</span> <span>in</span> <span>her</span> 
@@ -132,7 +132,7 @@ The gallery stretches before you, a testament to generations of your family's hi
 The air grows heavier as you proceed, as though you were walking through a jungle rather than an open room. A [[mahogany door->Study]] stands ajar, revealing floor-to-ceiling shelves and a massive desk buried in papers. Behind you, the [[main staircase->Foyer]] seems to have moved further away, though you couln't have walked that far.
 </div>
 
-:: Gardens [location]
+:: Gardens [location] {"position":"800,400"}
 <div class="fragmented-text">
 <span>sun</span> <span>never</span> <span>sets</span>
 <span>path</span> <span>never</span> <span>ends</span>
@@ -149,7 +149,7 @@ The sun hangs motionless in the sky, as if the gardens exist in a single moment 
 the flowers bloom in patterns that spell your name...
 </div>
 
-:: Kitchen [location]
+:: Kitchen [location] {"position":"1200,400"}
 <div class="narrative">
 Through the back entrance, a vast kitchen stretches before you. Copper pots and cast iron vessels hang suspended in the air, their polished surfaces reflecting a sunset that shouldn't be visible from this side of the house. The stone hearth still radiates warmth, though no fire burns within. Through a [[worn wooden door->Wine Cellar]], you glimpse shelves of glowing preserves - mango chow, tamarind balls, and preserved fruits that appear to shift and change when you look directly at them.
 
@@ -160,7 +160,7 @@ The air carries the impossible scent of fresh coconut bread and curry, as if som
 the cook left centuries ago... or was it just this morning?
 </div>
 
-:: Study [location]
+:: Study [location] {"position":"1400,600"}
 <div class="narrative">
 Dark wooden panels line the walls, while leather-bound books crowd every surface. A massive desk dominates the room, its surface scattered with [[letters->Letters]] dated from 1842 to 2157, all in your great-aunt's handwriting. A couple of the [[desk drawers->Desk]] are ajar, and you see the glint of brass instruments within.
 
@@ -171,7 +171,7 @@ Through the [[windows on the far wall->Upper Landing]] are gardens full of lush 
 her handwriting changes with each timeline... but the ink is always fresh
 </div>
 
-:: Letters [item]
+:: Letters [item] {"position":"1600,750"}
 <div class="fragmented-text">
 <span>ink</span> <span>flows</span>
 <span>like</span> <span>time</span>
@@ -182,14 +182,14 @@ her handwriting changes with each timeline... but the ink is always fresh
 The letters speak of discoveries, of doors that lead to other worlds, of time flowing like water through the house's halls. Your great-aunt's writing spans centuries, each page dated from a different era. Among them, you find a [[letter addressed to you->Revelation]], dated next week. The [[surprisingly comfortable chair->Study]] you've taken a seat in is warm to the touch, though you haven't another soul since you entered the house.
 </div>
 
-:: Desk [item]
+:: Desk [item] {"position":"1400,750"}
 <div class="narrative">
 The desk drawers contain maps of places you've only seen in half-remembered dreams. Your fingers brush against a [[brass key->Escape]] that sends a tingle ricocheting amongst your molars. A [[peculiar compass->Lost Forever]] points towards three different norths at the same time.
 
 The [[window behind the desk->Upper Landing]] shows a garden you don't remember seeing from outside.
 </div>
 
-:: Ballroom [location]
+:: Ballroom [location] {"position":"1200,750"}
 <div class="narrative">
 Moonlight streams through tall windows that stretch two stories high, though sunset painted the sky amber mere moments ago. The floor beneath your feet shifts subtly, its intricate patterns rearranging themselves when you look away. 
 
@@ -200,7 +200,7 @@ The space feels alive – [[the empty dance floor->Endless Dance]] calling to yo
 the dancers have been waiting for you since before you were born...
 </div>
 
-:: Endless Dance [ending]
+:: Endless Dance [ending] {"position":"1100,1000"}
 <div class="fragmented-text">
 <span>spinning</span> <span>through</span>
 <span>all</span> <span>possible</span>
@@ -217,7 +217,7 @@ The doorway to the outside world grows dimmer with each spin, until it fades ent
 ''A JOYOUS CURSE, TO DANCE THROUGH TIME''
 [[Begin Again?->Start]]
 
-:: Lower Halls [transition]
+:: Lower Halls [transition] {"position":"1000,600"}
 <div class="fragmented-text">
 <span>descending</span> 
 <span>deeper</span> 
@@ -238,7 +238,7 @@ From somewhere far below, you hear what might be [[music->Lost Forever]], or per
 counting the steps down is pointless... they just keep going
 </div>
 
-:: Wine Cellar [location]
+:: Wine Cellar [location] {"position":"800,750"}
 <div class="narrative">
 Bottles line the walls in endless rows, their labels bearing impossible vintages. Some red sorrel wines haven't been bottled yet, others come from estates that ceased to exist centuries ago. Shelves of perfectly preserved black cake span decades. In the corner, a [[dusty ledger->Lost Forever]] records deliveries in your great-aunt's familiar hand - the most recent entry dated fifty years from now.
 
@@ -249,7 +249,7 @@ Through an ancient [[teak door->Lower Halls]], you hear distant echoes of partie
 vintages that haven't been bottled yet taste the sweetest...
 </div>
 
-:: Revelation [ending]
+:: Legacy [ending] {"position":"700,950"}
 <div class="narrative">
 You open the letter and read: "My dearest, by the time you find this, I will have lived a thousand lives in these halls. Each door leads to another moment, another possibility. I've watched you grow up a hundred times, seen you find this letter in a hundred ways. The [[house->Lost Forever]] has become my home across all times. Perhaps it will become yours too."
 
@@ -260,7 +260,7 @@ You open the letter and read: "My dearest, by the time you find this, I will hav
 
 </div>
 
-:: Servants Quarters [location]
+:: Servants Quarters [location] {"position":"1000,750"}
 <div class="narrative">
 The narrow corridor branches and corkscrews back on itself. Behind each door, you glimpse the same room from different angles, as if space itself has been folded like origami. Uniforms hang in perfect rows, pressed and ready for staff who vanished generations ago - or was it moments before you arrived?
 
