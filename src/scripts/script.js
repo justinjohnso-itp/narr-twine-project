@@ -65,5 +65,37 @@ $(document).ready(() => {
         "--random-y": Math.random(),
       });
     });
+
+    // Position fragmented text
+    $(".fragmented-text span").each(function () {
+      const randomX = Math.random() * 40 - 20;
+      const randomY = Math.random() * 40 - 20;
+      $(this).css("transform", `translate(${randomX}px, ${randomY}px)`);
+    });
+
+    // Ensure floating text doesn't overlap with fragmented text
+    $(".floating-text").each(function () {
+      const rect = this.getBoundingClientRect();
+      const fragmentRect = $(".fragmented-text")[0]?.getBoundingClientRect();
+
+      if (fragmentRect && checkOverlap(rect, fragmentRect)) {
+        $(this).css("top", `${fragmentRect.bottom + 20}px`);
+      }
+    });
+  });
+
+  // Helper function to check for overlap
+  function checkOverlap(rect1, rect2) {
+    return !(
+      rect1.right < rect2.left ||
+      rect1.left > rect2.right ||
+      rect1.bottom < rect2.top ||
+      rect1.top > rect2.bottom
+    );
+  }
+
+  // Handle window resize
+  $(window).on("resize", function () {
+    $(document).trigger(":passagerender");
   });
 });
