@@ -66,6 +66,10 @@ A peculiar [[violet glow->Tome]] emanates from somewhere deep within the stacks,
 Through gaps in the bookcases, you glimpse reflections of the same room, each slightly different, each promising a different kind of knowledge.
 </div>
 
+<div class="floating-text" style="left: 20px; bottom: 40px">
+the books remember your fingers from tomorrow's reading...
+</div>
+
 :: Tome [item]
 The book opens of its own accord. The pages are filled with
 
@@ -141,6 +145,10 @@ The manicured hedges form a perfect circle around the house, their shadows falli
 The sun hangs motionless in the sky, as if the gardens exist in a single moment frozen in amber. Somewhere, a fountain bubbles with water that sounds like whispered conversations.
 </div>
 
+<div class="floating-text" style="right: 40px; bottom: 35px">
+the flowers bloom in patterns that spell your name...
+</div>
+
 :: Kitchen [location]
 <div class="narrative">
 Through the back entrance, a vast kitchen stretches before you. Copper pots and cast iron vessels hang suspended in the air, their polished surfaces reflecting a sunset that shouldn't be visible from this side of the house. The stone hearth still radiates warmth, though no fire burns within. Through a [[worn wooden door->Wine Cellar]], you glimpse shelves of glowing preserves - mango chow, tamarind balls, and preserved fruits that appear to shift and change when you look directly at them.
@@ -148,11 +156,19 @@ Through the back entrance, a vast kitchen stretches before you. Copper pots and 
 The air carries the impossible scent of fresh coconut bread and curry, as if someone has been cooking continuously for centuries. On the massive wooden table, a [[half-written shopping list->Lost Forever]] includes items with prices in both dollars and old pence, the ink on then pen beside it still wet. The [[main gallery->Foyer]] feels strangely distant now, as if the kitchen exists in its own pocket of time.
 </div>
 
+<div class="floating-text" style="left: 25px; top: 30px">
+the cook left centuries ago... or was it just this morning?
+</div>
+
 :: Study [location]
 <div class="narrative">
 Dark wooden panels line the walls, while leather-bound books crowd every surface. A massive desk dominates the room, its surface scattered with [[letters->Letters]] dated from 1842 to 2157, all in your great-aunt's handwriting. A couple of the [[desk drawers->Desk]] are ajar, and you see the glint of brass instruments within.
 
 Through the [[windows on the far wall->Upper Landing]] are gardens full of lush flora the likes of which you've never seen before... and definetly didn't pass on your way inside.
+</div>
+
+<div class="floating-text" style="right: 35px; bottom: 50px">
+her handwriting changes with each timeline... but the ink is always fresh
 </div>
 
 :: Letters [item]
@@ -178,6 +194,10 @@ The [[window behind the desk->Upper Landing]] shows a garden you don't remember 
 Moonlight streams through tall windows that stretch two stories high, though sunset painted the sky amber mere moments ago. The floor beneath your feet shifts subtly, its intricate patterns rearranging themselves when you look away. 
 
 The space feels alive – [[the empty dance floor->Endless Dance]] calling to you, and the faintest of notes hanging in the air, one beat before a crecendo. Through the mirrors that line the walls, your reflection dances to a rhythm you cannot hear. The [[grand doorway->Upper Landing]] through which you entered feels muted all of a sudden, so much less exciting than what this room could hold.
+</div>
+
+<div class="floating-text" style="left: 30px; top: 40px">
+the dancers have been waiting for you since before you were born...
 </div>
 
 :: Endless Dance [ending]
@@ -214,11 +234,19 @@ The stairs spiral down, and down, far past where the foundations of the house sh
 From somewhere far below, you hear what might be [[music->Lost Forever]], or perhaps the house's heartbeat.
 </div>
 
+<div class="floating-text" style="right: 25px; bottom: 30px">
+counting the steps down is pointless... they just keep going
+</div>
+
 :: Wine Cellar [location]
 <div class="narrative">
 Bottles line the walls in endless rows, their labels bearing impossible vintages. Some red sorrel wines haven't been bottled yet, others come from estates that ceased to exist centuries ago. Shelves of perfectly preserved black cake span decades. In the corner, a [[dusty ledger->Lost Forever]] records deliveries in your great-aunt's familiar hand - the most recent entry dated fifty years from now.
 
 Through an ancient [[teak door->Lower Halls]], you hear distant echoes of parties long past. Or perhaps they haven't happened yet. The [[cellar's depths->Lost Forever]] beckon with the scent of sprits that will make you forget yesterday and remember tomorrow.
+</div>
+
+<div class="floating-text" style="right: 30px; top: 20px">
+vintages that haven't been bottled yet taste the sweetest...
 </div>
 
 :: Revelation [ending]

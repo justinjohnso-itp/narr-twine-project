@@ -85,15 +85,22 @@ h1, h2, h3 {
     text-align: justify;
 }
 
-.narrative a {
-    color: inherit;
+/* Update link styles to be more general */
+.passage a {
+    color: #4169e1;
     text-decoration: none;
     border-bottom: 1px dotted #4a1c40;
+    transition: all 0.2s ease;
 }
 
-.narrative a:hover {
+.passage a:hover {
     color: #4a1c40;
     border-bottom: 1px solid #4a1c40;
+}
+
+/* Remove the narrative-specific link styles since they're now handled globally */
+.narrative a {
+    color: #4169e1;
 }
 
 /* Add ending-specific styles */
