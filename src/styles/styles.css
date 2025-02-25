@@ -94,7 +94,7 @@ h1, h2, h3 {
 }
 
 .passage a:hover {
-    color: #4a1c40;
+    color: rgba(74,28,64,.5);
     opacity: 1;
 }
 
