@@ -85,13 +85,20 @@ h1, h2, h3 {
     text-align: justify;
 }
 
-.narrative a {
-    color: inherit;
+/* Update link styles to remove underlines */
+.passage a {
+    color: #4169e1;
     text-decoration: none;
-    border-bottom: 1px dotted #4a1c40;
+    transition: all 0.2s ease;
+    opacity: 0.8;
 }
 
-.narrative a:hover {
+.passage a:hover {
     color: #4a1c40;
-    border-bottom: 1px solid #4a1c40;
+    opacity: 1;
+}
+
+/* Remove old narrative-specific styles */
+.narrative a {
+    color: #4169e1;
 }
