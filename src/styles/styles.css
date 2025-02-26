@@ -36,7 +36,7 @@ body {
     max-width: min(900px, 95vw);
     height: 100vh;
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 2em 2em 0;
     position: relative;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -52,7 +52,7 @@ body {
     min-height: 85vh;
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 2vh 1rem 0;
     gap: clamp(0.25rem, 1.25vh, 0.75rem);
 }
 
