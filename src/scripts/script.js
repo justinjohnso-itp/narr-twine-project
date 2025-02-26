@@ -25,4 +25,7 @@ $(document).ready(() => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(positionFragments, 100);
   });
+
+  // No more ui bar
+  UIBar.destroy();
 });

@@ -16,6 +16,22 @@ body {
     overflow: hidden;
 }
 
+/* Base font size variables */
+:root {
+    --base-font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    --fragment-scale: 0.9;
+    --floating-scale: 0.8;
+}
+
+/* Add tablet breakpoint variable */
+@media (max-width: 768px) {
+    :root {
+        --base-font-size: clamp(0.9rem, 2.5vw, 1rem);
+        --fragment-scale: 1;
+        --floating-scale: 1;
+    }
+}
+
 #story {
     max-width: min(900px, 95vw);
     height: 100vh;
@@ -106,10 +122,11 @@ h1, h2, h3 {
     font-family: 'Space Mono', monospace;
     color: #4a1c40;
     opacity: 0.7;
-    font-size: clamp(0.7rem, 1.2vw, 1rem);
+    font-size: calc(var(--base-font-size) * var(--fragment-scale));
     padding: 0.5rem;
     will-change: transform;
     transition: transform 0.3s ease;
+    line-height: 1.4;
 }
 
 .narrative + .fragmented-text {
@@ -131,15 +148,18 @@ h1, h2, h3 {
     font-family: 'Space Mono', monospace;
     font-style: italic;
     color: rgba(74, 28, 64, 0.3);
-    font-size: clamp(0.6rem, 1vw, 0.9rem);
+    font-size: calc(var(--base-font-size) * var(--floating-scale));
     max-width: min(200px, 30vw);
     margin: clamp(0.25rem, 0.75vh, 0.5rem) 0;
+    line-height: 1.4;
 }
 
 /* Narrative blocks */
 .narrative {
     flex: 1;
     margin: clamp(0.25rem, 0.75vh, 0.5rem) 0;
+    font-size: var(--base-font-size);
+    line-height: 1.6;
 }
 
 /* Update link styles to remove underlines */
